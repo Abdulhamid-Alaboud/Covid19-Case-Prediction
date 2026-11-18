@@ -22,7 +22,7 @@ This project implements a supervised machine learning pipeline for classifying C
 
 ## Dataset
 **Source:** Corona Virus Report on Kaggle  
-🔗 [https://www.kaggle.com/datasets/imdevskp/corona-virus-report](https://www.kaggle.com/datasets/imdevskp/corona-virus-report)
+[https://www.kaggle.com/datasets/imdevskp/corona-virus-report](https://www.kaggle.com/datasets/imdevskp/corona-virus-report)
 
 ### Setup Instructions:
 1. Download the dataset from Kaggle (free account required)
@@ -53,7 +53,7 @@ numpy>=1.24.0
 scikit-learn>=1.3.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
-google colab>=1.0.0
+jupyter>=1.0.0
 ```
 
 ## Installation & Usage
@@ -65,8 +65,8 @@ cd Covid19-Case-Prediction
 # Install required packages
 pip install -r requirements.txt
 
-# Download dataset from Kaggle and run analysis
-google colab notebook Covid_19_Case_Prediction.ipynb
+# Launch the notebook
+jupyter notebook Covid_19_Case_Prediction.ipynb
 ```
 
 ## Citation
