@@ -29,6 +29,32 @@ A supervised machine learning and exploratory data analysis (EDA) pipeline built
 
 ---
 
+## Visual Analysis & Model Diagnostics
+
+### Exploratory Data Analysis & CPIS Regional Severity
+<p align="center">
+  <img src="figures/monthly_trends.png" alt="Monthly Trend of COVID-19 Cases" width="85%"/>
+</p>
+<p align="center">
+  <img src="figures/cpis_by_who_region.png" alt="Composite Pandemic Impact Score by WHO Region" width="85%"/>
+</p>
+<p align="center">
+  <img src="figures/correlation_heatmap.png" alt="Feature Correlation Heatmap" width="75%"/>
+</p>
+
+### Classification Confusion Matrices & ROC-AUC Comparison
+<p align="center">
+  <img src="figures/confusion_matrices_comparison.png" alt="Logistic Regression vs Random Forest Confusion Matrices" width="90%"/>
+</p>
+<p align="center">
+  <img src="figures/confusion_matrix_two_stage.png" alt="Two-Stage Pipeline Confusion Matrix" width="60%"/>
+</p>
+<p align="center">
+  <img src="figures/roc_curves.png" alt="ROC Curves for Logistic Regression and Random Forest" width="75%"/>
+</p>
+
+---
+
 ## Methodological Audit & Known Limitations
 In the interest of rigorous ML engineering, high headline accuracy (`99.69%`) should be interpreted alongside three structural caveats present in the original notebook implementation:
 1. **Target–Feature Algebraic Coupling:** In `covid_19_clean_complete.csv`, `Active = Confirmed - Deaths - Recovered`. Because `Confirmed`, `Deaths`, and `Recovered` are included in `X` while `y` encodes `Active > 0`, the classification boundary is nearly deterministic rather than a forecasting task.
